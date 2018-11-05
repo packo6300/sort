@@ -21,6 +21,11 @@ class sorteo extends Controller{
                 "nombre"=>"nombre1",
                 "img"=>"img/adblock.png",
                 "desc"=>"descripcion de prueba"
+            ],
+            [
+                "nombre"=>"nombre1",
+                "img"=>"img/adblock.png",
+                "desc"=>"descripcion de prueba"
             ]
         ];
         return view('sorteos')->with('publicaciones', $publicaciones);
