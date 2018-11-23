@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script type="text/javascript">
-            window.adblockEnabled = true;
+            window.adblockEnabled = false;
             (adsbygoogle = window.adsbygoogle || []).push({
                 google_ad_client: "ca-pub-6064776652287686",
                 enable_page_level_ads: true
@@ -16,7 +16,7 @@
         @section('navbar')
             <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#">Sorteos</a>
+                    <a class="navbar-brand" href="../">Inicio</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -29,7 +29,7 @@
                                 <a class="nav-link" href="#">Mis sorteos activos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Lista de sorteos</a>
+                                <a class="nav-link" href="sorteos">Lista de sorteos</a>
                             </li>
                         </ul>
                     </div>

@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', 'sorteo@index');
-
-Route::get('sorteos/','sorteo@index');
+Route::get('/',function(){
+    return Response::view('welcome');
+});
+Route::get('sorteos/','SorteoController@index');
