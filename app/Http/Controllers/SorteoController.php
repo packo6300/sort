@@ -65,9 +65,10 @@ class SorteoController extends Controller
      * @param  \sorteo\Sorteo  $sorteo
      * @return \Illuminate\Http\Response
      */
-    public function show(Sorteo $sorteo)
+    public function show($number)
     {
-        //
+        $sorteo= Sorteo::getAllByindex($number);
+        return view('sorteos')->with('publicaciones', $sorteo);
     }
 
     /**
@@ -78,7 +79,7 @@ class SorteoController extends Controller
      */
     public function edit(Sorteo $sorteo)
     {
-        //
+       
     }
 
     /**
