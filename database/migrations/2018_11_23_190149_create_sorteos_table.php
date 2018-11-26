@@ -16,6 +16,7 @@ class CreateSorteosTable extends Migration
         Schema::create('sorteos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre',100);
+            $table->longText('imagen');
             $table->longText('descripcion');
             $table->dateTime('inicia');
             $table->dateTime('finaliza');

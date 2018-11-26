@@ -65,10 +65,10 @@ class SorteoController extends Controller
      * @param  \sorteo\Sorteo  $sorteo
      * @return \Illuminate\Http\Response
      */
-    public function show($number)
+    public function show()
     {
-        $sorteo= Sorteo::getAllByindex($number);
-        return view('sorteos')->with('publicaciones', $sorteo);
+        $sorteo= Sorteo::getAll();
+        return view('sorteos',['publicaciones' => $sorteo]);
     }
 
     /**
