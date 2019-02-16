@@ -5,37 +5,37 @@ namespace sorteo\Http\Controllers;
 use sorteo\Sorteo;
 use Illuminate\Http\Request;
 
-class SorteoController extends Controller
-{
+class SorteoController extends Controller {
+
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(){
-        $publicaciones=[
+    public function index() {
+        $sorteos = [
             [
-                "nombre"=>"nombre1",
-                "img"=>"img/adblock.png",
-                "desc"=>"descripcion de prueba"
+                "nombre" => "nombre1",
+                "imagen" => "img/adblock.png",
+                "descripcion" => "descripcion de prueba"
             ],
             [
-                "nombre"=>"nombre1",
-                "img"=>"img/adblock.png",
-                "desc"=>"descripcion de prueba"
+                "nombre" => "nombre1",
+                "imagen" => "img/adblock.png",
+                "descripcion" => "descripcion de prueba"
             ],
             [
-                "nombre"=>"nombre1",
-                "img"=>"img/adblock.png",
-                "desc"=>"descripcion de prueba"
+                "nombre" => "nombre1",
+                "imagen" => "img/adblock.png",
+                "descripcion" => "descripcion de prueba"
             ],
             [
-                "nombre"=>"nombre1",
-                "img"=>"img/adblock.png",
-                "desc"=>"descripcion de prueba"
+                "nombre" => "nombre1",
+                "imagen" => "img/adblock.png",
+                "descripcion" => "descripcion de prueba"
             ]
         ];
-        return view('sorteos')->with('publicaciones', $publicaciones);
+        return view('sorteos', ['publicaciones' => $sorteos]);
     }
 
     /**
@@ -43,8 +43,7 @@ class SorteoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
+    public function create() {
         //
     }
 
@@ -54,8 +53,7 @@ class SorteoController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
+    public function store(Request $request) {
         //
     }
 
@@ -65,10 +63,9 @@ class SorteoController extends Controller
      * @param  \sorteo\Sorteo  $sorteo
      * @return \Illuminate\Http\Response
      */
-    public function show()
-    {
-        $sorteo= Sorteo::getAll();
-        return view('sorteos',['publicaciones' => $sorteo]);
+    public function show() {
+        $sorteo = Sorteo::getAll();
+        return view('sorteos', ['publicaciones' => $sorteo]);
     }
 
     /**
@@ -77,9 +74,8 @@ class SorteoController extends Controller
      * @param  \sorteo\Sorteo  $sorteo
      * @return \Illuminate\Http\Response
      */
-    public function edit(Sorteo $sorteo)
-    {
-       
+    public function edit(Sorteo $sorteo) {
+        
     }
 
     /**
@@ -89,8 +85,7 @@ class SorteoController extends Controller
      * @param  \sorteo\Sorteo  $sorteo
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sorteo $sorteo)
-    {
+    public function update(Request $request, Sorteo $sorteo) {
         //
     }
 
@@ -100,8 +95,8 @@ class SorteoController extends Controller
      * @param  \sorteo\Sorteo  $sorteo
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Sorteo $sorteo)
-    {
+    public function destroy(Sorteo $sorteo) {
         //
     }
+
 }

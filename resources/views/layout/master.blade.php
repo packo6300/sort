@@ -3,6 +3,7 @@
         <title>Rifas online - @yield('title')</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
+        <link  href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
         <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <script type="text/javascript">
             window.adblockEnabled = false;
@@ -11,6 +12,8 @@
                 enable_page_level_ads: true
             });
         </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script> 
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -31,6 +34,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="sorteos">Lista de sorteos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="participa">Participantes</a>
                             </li>
                         </ul>
                     </div>
@@ -72,7 +78,7 @@
                 @yield('content')
             </div>            
         </div>
-        <script type="text/javascript" src="js/adframe.js"></script>
+        <script type="text/javascript" src="js/adframe.js"></script>        
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.29/dist/sweetalert2.all.min.js"></script>
         <script type="text/javascript">
             if(window.adblockEnabled) {
@@ -85,6 +91,6 @@
                     confirmButtonText: 'Entendido'
                 });
             }
-        </script>
+        </script>        
     </body>
 </html>

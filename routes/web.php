@@ -14,3 +14,4 @@
 Route::get('/','WelcomeController@index');
 Route::get('sorteos/','SorteoController@show');
 Route::get('misSorteos/','SorteoController@index');
+Route::get('participa', 'ParticipaController@index');
